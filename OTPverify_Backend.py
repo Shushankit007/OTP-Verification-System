@@ -74,6 +74,7 @@ class OTPVerifyFeatureBackend():
             print("OTP entered is invalid")
             return False
 
+# If you want to test this backend work without Interface, Uncomment below lines. 
     # Main function
     # def main(self):
     #     email = input("Enter your email address: ")
