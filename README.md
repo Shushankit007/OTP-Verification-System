@@ -15,7 +15,7 @@ The project consists of two main components: the backend logic and the graphical
 ## Documentation
 This section provides a summary of the project's methods and functionality. For detailed descriptions, refer to the comprehensive documentation available in the attached Word document (`OTP_Project_documentation.docx`).
 
-### **Components and Functionality**
+### **Components and Functionality:**
 
 ### `OTPverify_Backend.py`
 **OTPVerifyFeatureBackend Class:**
