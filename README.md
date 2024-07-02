@@ -18,16 +18,19 @@ This section provides a summary of the project's methods and functionality. For 
 ### **Components and Functionality:**
 
 ### `OTPverify_Backend.py`
+
 **OTPVerifyFeatureBackend Class:**
 - Manages OTP generation, email sending, and verification.
 - Methods: `generate_otp`, `verify_email`, `send_otp`, `prompt_for_otp`, `verify_otp`.
 **Main Function (`if __name__ == '__main__'`):**
 - Provides testing functionality for OTP features.
+  
 **OTPVerification Class:**
 - Acts as an interface between GUI and backend.
 - Methods: `send_otp`, `verify_otp`.
 
 ### `OTPverify_GUI.py`
+
 **OTPVerifyGUI Class:**
 - Implements PyQt5-based GUI for OTP operations.
 - Methods: `send_otp_button`, `verify_otp_button`.
