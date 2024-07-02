@@ -3,74 +3,36 @@
 ## Project Overview
 The OTP Verification System is a Python-based application designed to enhance user authentication by generating and validating One-Time Passwords (OTPs) via email. It ensures secure access to sensitive information or actions with a focus on simplicity, reliability, and security.
 
-### Project Structure:
+## Project Structure:
 The project consists of two main components: the backend logic and the graphical user interface (GUI). The backend logic handles OTP generation, email sending, and OTP verification, while the GUI provides a user-friendly interface for interacting with the system. Refer below file
 - Backend components : `OTPverify_Backend.py` 
 - GUI components : `OTPverify_GUI.py`
 
-### Methodologies and Tools
+## Methodologies and Tools
 - **Tools:** Python, PyQt5, Tkinter, Smtplib
 - **Methodologies:** Secure OTP generation, Email communication protocols
 
-## Components and Functionality
-### `OTPverify_Backend.py`
-#### OTPVerifyFeatureBackend Class:
-- Handles OTP generation, email sending, and verification.
-- Methods:
-  - `generate_otp(self)`: Generates a 6-digit OTP using random integers.
-  - `verify_email(self, email)`: Validates email format using regex.
-  - `send_otp(self, email)`: Sends OTP via SMTP and returns success status.
-  - `prompt_for_otp(self)`: Prompts user for OTP input.
-  - `verify_otp(self, generated_otp, entered_otp)`: Compares entered OTP with generated OTP.
-- Main Function (`if __name__ == '__main__'`):
-  - Provides testing functionality for OTP features.
-
-#### OTPVerification Class
-- Acts as an interface between GUI and backend.
-- Methods:
-  - `__init__(self)`: Initializes OTPVerification.
-  - `send_otp(self, email)`: Initiates OTP sending.
-  - `verify_otp(self, generated_otp, entered_otp)`: Verifies entered OTP.
-
-### OTPverify_GUI.py
-#### OTPVerifyGUI Class:
-- Implements GUI using PyQt5 for OTP verification.
-- Initializes GUI components and handles user interactions.
-- Methods:
-  - `send_otp_button(self)`: Validates email and sends OTP.
-  - `verify_otp_button(self)`: Verifies entered OTP.
-- Features:
-  - GUI setup: Window title, layout, styling.
-  - Input fields: Email and OTP.
-  - Buttons: Send OTP, Verify OTP.
-  - Status messages: Updates on send and verify actions.
-#### Main Function (`if __name__ == '__main__'`):
-- Initializes and displays OTP verification GUI.
-
-## Visuals
-N/A
-
 ## Documentation
-- **Usage:**
-1. Run the OTPVerifyGUI.py script to launch the OTP Verification System.
-2. Enter your email address in the provided input field and click the "Send OTP" button.
-3. Check your email inbox for the OTP sent by the system.
-4. Enter the received OTP in the OTP input field and click the "Verify OTP" button.
-5. If the entered OTP is valid, access will be granted; otherwise, access will be denied.
-   
-- **How to Run the Program:**
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Run the Python script `OTPverify_Backend.py`
-4. After successfull execution of `OTPverify_Backend.py` execute the `OTPverify_GUI.py`
-5. Follow the prompts to generate, send, and verify the OTP.
+This section provides a summary of the project's methods and functionality. For detailed descriptions, refer to the comprehensive documentation available in the attached Word document (`OTP_Project_documentation.docx`).
 
-- **Test Cases:**
-1. **Valid Email Address**: Verify that the system accepts valid email addresses for OTP delivery.
-2. **Invalid Email Address**: Verify that the system rejects invalid email addresses and prompts the user to enter a valid one.
-3. **Successful OTP Generation**: Verify that the system successfully generates a 6-digit OTP and sends it to the user's email address.
-4. **Invalid OTP Entry**: Verify that the system prompts the user to enter a valid OTP if the entered OTP is incorrect.
-5. **OTP Verification**: Verify that the system correctly verifies the entered OTP and grants access if it matches the generated OTP. 
+### **Components and Functionality**
+
+### `OTPverify_Backend.py`
+**OTPVerifyFeatureBackend Class:**
+- Manages OTP generation, email sending, and verification.
+- Methods: `generate_otp`, `verify_email`, `send_otp`, `prompt_for_otp`, `verify_otp`.
+**Main Function (`if __name__ == '__main__'`):**
+- Provides testing functionality for OTP features.
+**OTPVerification Class:**
+- Acts as an interface between GUI and backend.
+- Methods: `send_otp`, `verify_otp`.
+
+### `OTPverify_GUI.py`
+**OTPVerifyGUI Class:**
+- Implements PyQt5-based GUI for OTP operations.
+- Methods: `send_otp_button`, `verify_otp_button`.
+**Main Function (`if __name__ == '__main__'`):**
+- Initializes and displays OTP verification GUI.
 
 ### Dependencies & Libraries
 - Python 3.x
@@ -80,6 +42,18 @@ N/A
 - Re
 - Random
 - Sys
+
+### How to Run the Program:
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run the Python script `OTPverify_Backend.py`
+4. After successfull execution of `OTPverify_Backend.py` execute the `OTPverify_GUI.py`
+5. Follow the prompts to generate, send, and verify the OTP.
+
+
+## Visuals
+N/A
+
 
 ## Contributions and Achievements
 As the project developer, I played a key role in implementing robust OTP generation, email sending, and verification functionalities. I also designed and integrated a user-friendly GUI using PyQt5 for seamless user interaction.
